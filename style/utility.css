@@ -1,0 +1,51 @@
+body {
+    background-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+@media (width >= 48em) { 
+
+    .container {
+        width: 100%;
+        max-width: 90%; 
+        margin-inline: auto;
+    }
+
+}
+
+@media (width >= 80em) {
+
+    .container {
+        width: 100%;
+        max-width: 90%;
+        margin-inline: auto;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+
+}
