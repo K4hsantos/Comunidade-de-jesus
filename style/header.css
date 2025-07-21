@@ -1,0 +1,65 @@
+
+ .background {
+    background-image: url(/assets/img/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+
+    & header {
+        & nav {
+            & a {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+
+
+@media (width >= 48em) and (width <= 64em) {
+
+    header {
+        & nav {
+            & a {
+                padding-top: 2rem;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (width >= 80em) {
+
+     .background {
+        height: auto;
+        
+        & header {
+            & nav {
+                justify-content: space-between;
+                & a {
+                    gap: 1rem;
+                }
+
+                & .navigation {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 2rem;
+
+                    & a {
+                        text-decoration: none;
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 1.25rem;
+                        font-weight: 400;
+                        align-items: center;
+                        margin-top: 4.35rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
