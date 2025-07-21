@@ -4,6 +4,8 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0; 
+
+    overflow-x: hidden;
 }
 
 .container {
@@ -25,6 +27,14 @@
     display: grid;
 }
 
+.btn {
+    max-width: 14rem;
+    margin: auto;
+    background-color: #00000059;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
 @media (width >= 48em) { 
 
     .container {
@@ -32,6 +42,14 @@
         max-width: 90%; 
         margin-inline: auto;
     }
+
+    .btn {
+    max-width: 20rem;
+    margin: auto;
+    background-color: #00000059;
+    border-radius: 3rem;
+    padding: 1.6rem;
+}
 
 }
 
