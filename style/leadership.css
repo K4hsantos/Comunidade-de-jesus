@@ -7,6 +7,7 @@
         font-weight: 800;
         font-size: 2rem;
         text-align: center;
+        color: #34261F;
     }
 
     & p {
@@ -16,6 +17,7 @@
         font-weight: 400;
         font-size: 1.2rem;
         text-align: center;
+        color: #5C5C5C;
     }
 
     & img {
@@ -50,6 +52,42 @@
             display: block;
             margin: auto;
             width: 35rem;
+        }
+    }
+}
+
+@media (width >= 80em) {
+    #leadership {
+        position: relative;
+        background-color: #FFFFFF;
+
+        & h1 {
+            position: absolute;
+            margin-top: 10rem;
+            font-family: 'poppins', sans-serif;
+            font-weight: 800;
+            font-size: 4em;
+            text-align: center;
+            top: 15rem;
+        }
+
+        & p {
+            position: absolute;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            font-family: 'roboto', sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            max-width: 55rem;
+            text-align: start;
+            top: 35rem;
+        }
+
+        & img {
+            position: absolute;
+            width: 50rem;
+            top: 10rem;
+            left: 65rem;
         }
     }
 }
