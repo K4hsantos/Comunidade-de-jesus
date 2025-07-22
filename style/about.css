@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    padding-bottom: 15.2rem;
+    padding-bottom: 10rem;
 
     & div {
         & h1 {
@@ -60,24 +60,51 @@
 }
 
 @media (width >= 80em) {
-    #about {
-        & div {
-            & h1 {
-                font-size: 4rem;
-            }
 
-            & p {
-                margin-top: 5rem;
-                max-width: 51rem;
-                font-size: 1.5rem;
-            }
-        }
+#about {
+  .desktop-only {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20rem 2rem;
+    flex-wrap: wrap;
 
-        & div:nth-child(2) {
-            & ul {
-                margin-left: 20rem;
-                font-size: 1.5rem;
-            }
+    & .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 25rem;
+      color: white;
+      font-family: 'poppins', sans-serif;
+
+      & h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-top: -3rem;
+        margin-bottom: 1rem;
+      }
+
+      & .line {
+        width:30m;
+        height: 1px;
+        background-color: white;
+        margin-bottom: 1rem;
+      }
+
+      & p,
+      & ul {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      & ul {
+
+        & li {
+          margin-bottom: 0.5rem;
         }
+      }
     }
+  }
+}
+
 }
