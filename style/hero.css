@@ -33,6 +33,13 @@
         font-weight: 700;
         text-decoration: none;
         color: white;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.15);
+            background-color: #FF6D0C;
+            box-shadow: 0 0 15px 5px rgba(255, 109, 12, 0.7);
+        }
     }
 }
 
