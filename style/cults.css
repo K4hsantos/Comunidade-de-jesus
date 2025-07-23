@@ -1,3 +1,56 @@
 #cults {
-    
+
+    & .mobile-only {
+        & h1 {
+            font-family: 'poppins', sans-serif;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 3rem;
+            text-align: center;
+            color: #007ed2ce;
+        }
+        & h2 {
+            font-family: 'dancing script', sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            margin-top: -2rem;
+        }
+
+        & .list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            & span {
+                font-family: 'poppins', sans-serif;
+                margin-top: 4rem;
+                font-size: 2rem;
+                font-weight: 600;
+                color: #007ed2ce;
+            }
+
+            & a {
+                margin-top: -1.7rem;
+                width: 17rem;
+                text-align: center;
+                border: 2px solid #00a1d24d;
+                border-radius: 3rem;
+                padding: .3rem;
+                font-family: 'poppins', sans-serif;
+                font-size: 1.2rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: rgb(0, 0, 0);
+
+                & span {
+                    font-weight: bold;
+                    font-size: 2rem;
+                    text-transform: lowercase;
+                    color: black;
+                }
+            }
+        }
+    }
 }
