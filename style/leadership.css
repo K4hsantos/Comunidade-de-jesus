@@ -16,7 +16,7 @@
         font-family: 'roboto', sans-serif;
         font-weight: 400;
         font-size: 1.2rem;
-        text-align: center;
+        text-align: justify;
         color: #5C5C5C;
     }
 
@@ -58,22 +58,19 @@
 
 @media (width >= 80em) {
     #leadership {
-        position: relative;
         background-color: #FFFFFF;
 
         & h1 {
-            position: absolute;
-            margin-top: 10rem;
+            margin-top: 25rem;
             font-family: 'poppins', sans-serif;
             font-weight: 800;
             font-size: 4em;
-            text-align: center;
+            text-align: left;
             top: 15rem;
         }
 
         & p {
-            position: absolute;
-            margin-top: 1rem;
+            margin-top: 2rem;
             margin-bottom: 3rem;
             font-family: 'roboto', sans-serif;
             font-weight: 400;
@@ -84,10 +81,11 @@
         }
 
         & img {
-            position: absolute;
+            display: block;
             width: 50rem;
-            top: 10rem;
-            left: 65rem;
+            margin-top: -40rem;
+            margin-right: -25rem;
+            transform: translateX(-50%);
         }
     }
 }
