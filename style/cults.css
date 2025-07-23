@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 5rem;
 
 
         & img {
@@ -61,9 +62,95 @@
                     font-weight: bold;
                     font-size: 1.5rem;
                     text-transform: lowercase;
-                    color: #ffffffce;
+                    color: #00a1d2;
 
                 }
             }
         }
     }
+
+@media (width >= 80em) {
+    .desktop-only:nth-child(5) {
+        background-image: url(../assets/img/background-desktop-cults.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-bottom: 5rem;
+    }
+
+    #cults {
+        background-image: none;
+
+          & .flex {
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+        }
+
+        & img {
+            width: 5rem;
+            transform: rotate(-15deg) translateY(6rem);
+            margin-left: 32rem;
+        }
+
+        & h1 {
+            font-family: 'poppins', sans-serif;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 5rem;
+            margin-left: 3rem;
+            text-align: center;
+            color: #ffffffce;
+        }
+        & h2 {
+            font-family: 'dancing script', sans-serif;
+            font-size: 4.5rem;
+            font-weight: 600;
+            margin-left: 1rem;
+            text-align: center;
+            margin-top: -3rem;
+            color: #2dceffdd;
+        }
+
+        & .list {
+
+            & span {
+                font-family: 'poppins', sans-serif;
+                margin-top: 4rem;
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: #ffffffce;
+            }
+
+            & a {
+                margin-top: -.7rem;
+                width: 23rem;
+                text-align: center;
+                border: 2px solid #00a1d24d;
+                border-radius: 3rem;
+                padding: .3rem;
+                font-family: 'poppins', sans-serif;
+                font-size: 1.5rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #ffffffce;
+
+                transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        box-shadow: 0 0 15px 5px rgba(12, 186, 255, 0.7);
+                    }
+
+            & span {
+                margin-right: .5rem;
+                font-weight: bold;
+                font-size: 1.5rem;
+                text-transform: lowercase;
+                color: #00a1d2;
+
+                }
+            }
+        }
+    }
+}
