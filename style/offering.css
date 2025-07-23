@@ -1,0 +1,40 @@
+#offering {
+    background-image: url(../assets/img/background-offering.jpg);
+    padding-bottom: 10rem;
+
+    & h1 {
+        padding-top: 4rem;
+        font-family: 'poppins', sans-serif;
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        color: #34261F;
+        margin-bottom: 2rem;
+    }
+
+    & p {
+        font-family: 'poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: justify;
+        color: #5C5C5C;
+    }
+}
+
+
+@media (width >= 80em) {
+    #offering {
+        padding-bottom: 10rem;
+        & h1 {
+            padding-top: 10rem;
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        & p {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+}

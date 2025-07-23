@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 
 
         & img {
@@ -80,7 +80,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding-bottom: 5rem;
+        padding-bottom: 12rem;
     }
 
     #cults {
@@ -129,13 +129,13 @@
 
             & a {
                 margin-top: -.7rem;
-                width: 23rem;
+                width: 24rem;
                 text-align: center;
                 border: 2px solid #00a1d24d;
                 border-radius: 3rem;
                 padding: .3rem;
                 font-family: 'poppins', sans-serif;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: #ffffffce;
