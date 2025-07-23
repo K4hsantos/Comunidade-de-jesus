@@ -1,4 +1,5 @@
 #cults {
+    background-image: url(../assets/img/background-cults.jpeg);
 
     & .mobile-only {
 
@@ -41,22 +42,24 @@
 
             & a {
                 margin-top: -1.7rem;
-                width: 17rem;
+                width: 20rem;
                 text-align: center;
                 border: 2px solid #00a1d24d;
                 border-radius: 3rem;
                 padding: .3rem;
                 font-family: 'poppins', sans-serif;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: rgb(0, 0, 0);
 
                 & span {
+                    margin-right: .5rem;
                     font-weight: bold;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     text-transform: lowercase;
                     color: black;
+
                 }
             }
         }
