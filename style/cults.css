@@ -1,7 +1,9 @@
 #cults {
     background-image: url(../assets/img/background-cults.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    & .mobile-only {
 
         & img {
             transform: rotate(-15deg) translateY(4rem);
@@ -15,7 +17,7 @@
             font-size: 3rem;
             margin-left: 3rem;
             text-align: center;
-            color: #007ed2ce;
+            color: #ffffffce;
         }
         & h2 {
             font-family: 'dancing script', sans-serif;
@@ -24,6 +26,7 @@
             margin-left: 1rem;
             text-align: center;
             margin-top: -2rem;
+            color: #2dceffdd;
         }
 
         & .list {
@@ -37,7 +40,7 @@
                 margin-top: 4rem;
                 font-size: 2rem;
                 font-weight: 600;
-                color: #007ed2ce;
+                color: #ffffffce;
             }
 
             & a {
@@ -51,17 +54,16 @@
                 font-size: 1rem;
                 text-decoration: none;
                 text-transform: uppercase;
-                color: rgb(0, 0, 0);
+                color: #ffffffce;
 
                 & span {
                     margin-right: .5rem;
                     font-weight: bold;
                     font-size: 1.5rem;
                     text-transform: lowercase;
-                    color: black;
+                    color: #ffffffce;
 
                 }
             }
         }
     }
-}
