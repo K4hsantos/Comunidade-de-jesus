@@ -1,11 +1,18 @@
 #cults {
 
     & .mobile-only {
+
+        & img {
+            transform: rotate(-15deg) translateY(4rem);
+            margin-left: 1rem;
+        }
+
         & h1 {
             font-family: 'poppins', sans-serif;
             text-transform: uppercase;
             font-weight: 900;
             font-size: 3rem;
+            margin-left: 3rem;
             text-align: center;
             color: #007ed2ce;
         }
@@ -13,6 +20,7 @@
             font-family: 'dancing script', sans-serif;
             font-size: 3rem;
             font-weight: 600;
+            margin-left: 1rem;
             text-align: center;
             margin-top: -2rem;
         }
