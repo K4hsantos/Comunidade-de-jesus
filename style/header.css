@@ -10,7 +10,15 @@
     & header {
         & nav {
             & a {
-                margin-top: 3rem;
+                & img:nth-child(1) {
+                    width: 10rem;
+                    margin-top: 3rem;
+                }
+                & img:nth-child(2) {
+                    width: 20rem;
+                    margin-top: 3rem;
+                }
+                
             }
         }
     }
@@ -53,7 +61,7 @@
                         font-size: 1.25rem;
                         font-weight: 400;
                         align-items: center;
-                        margin-top: 4.35rem;
+                        margin-top: 3.5rem;
                     }
                 }
             }
