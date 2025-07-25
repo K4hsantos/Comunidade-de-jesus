@@ -203,7 +203,7 @@
     }
   }
 
-  .desktop-only .flex {
+  .about-desktop .flex {
   display: flex;
   justify-content: center;
   gap: 3rem;
