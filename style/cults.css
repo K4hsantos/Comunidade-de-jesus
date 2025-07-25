@@ -20,6 +20,7 @@
             text-align: center;
             color: #ffffffce;
         }
+
         & h2 {
             font-family: 'dancing script', sans-serif;
             font-size: 3rem;
@@ -36,126 +37,205 @@
             align-items: center;
             gap: 2rem;
 
-            & span {
+            & h3 {
                 font-family: 'poppins', sans-serif;
                 margin-top: 4rem;
                 font-size: 2rem;
                 font-weight: 600;
                 color: #ffffffce;
             }
+        }
 
-            & a {
-                margin-top: -1.7rem;
-                width: 20rem;
-                text-align: center;
-                border: 2px solid #00a1d24d;
-                border-radius: 3rem;
-                padding: .3rem;
-                font-family: 'poppins', sans-serif;
-                font-size: 1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: #ffffffce;
-                box-shadow: 0.3s ease;
+        & .clickable {
+            margin-top: -0.7rem;
+            width: 21rem;
+            text-align: center;
+            border: 2px solid #00a1d24d;
+            border-radius: 3rem;
+            padding: 0.3rem;
+            font-family: 'poppins', sans-serif;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: #ffffffce;
+            cursor: pointer;
+            display: inline-block;
 
-                    &:hover {
-                        box-shadow: 0 0 15px 5px rgba(12, 186, 255, 0.7);
-                    }
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 
-                & span {
-                    margin-right: .5rem;
-                    font-weight: bold;
-                    font-size: 1.5rem;
-                    text-transform: lowercase;
-                    color: #00a1d2;
+            &:hover {
+            transform: scale(1);
+            box-shadow: 0 0 15px 5px rgba(12, 186, 255, 0.7);
+        }   
 
-                }
-            }
+        & span {
+            text-transform: lowercase;
+            font-weight: 800;
+            color: #2dceffdd;
         }
     }
+}
 
-@media (width >= 80em) {
-    .desktop-only:nth-child(5) {
-        background-image: url(../assets/img/background-desktop-cults.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding-bottom: 12rem;
-    }
+@media (width >= 48em) and (width <= 64em) {
+     #cults {
+    background-image: url(../assets/img/background-cults.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
 
-    #cults {
-        background-image: none;
-
-          & .flex {
-            display: flex;
-            justify-content: center;
-            gap: 5rem;
-        }
 
         & img {
-            width: 5rem;
-            transform: rotate(-15deg) translateY(6rem);
-            margin-left: 32rem;
+            transform: rotate(-15deg) translateY(4rem);
+            margin-left: 12.5rem;
         }
 
         & h1 {
             font-family: 'poppins', sans-serif;
             text-transform: uppercase;
             font-weight: 900;
-            font-size: 5rem;
+            font-size: 3rem;
             margin-left: 3rem;
             text-align: center;
             color: #ffffffce;
         }
+
         & h2 {
             font-family: 'dancing script', sans-serif;
-            font-size: 4.5rem;
+            font-size: 3rem;
             font-weight: 600;
             margin-left: 1rem;
             text-align: center;
-            margin-top: -3rem;
+            margin-top: -2rem;
             color: #2dceffdd;
         }
 
         & .list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
 
-            & span {
+            & h3 {
                 font-family: 'poppins', sans-serif;
                 margin-top: 4rem;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: 600;
                 color: #ffffffce;
             }
+        }
 
-            & a {
-                margin-top: -.7rem;
-                width: 24rem;
-                text-align: center;
-                border: 2px solid #00a1d24d;
-                border-radius: 3rem;
-                padding: .3rem;
-                font-family: 'poppins', sans-serif;
-                font-size: 1.3rem;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: #ffffffce;
+        & .clickable {
+            margin-top: -0.7rem;
+            width: 21rem;
+            text-align: center;
+            border: 2px solid #00a1d24d;
+            border-radius: 3rem;
+            padding: 0.3rem;
+            font-family: 'poppins', sans-serif;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: #ffffffce;
+            cursor: pointer;
+            display: inline-block;
 
-                transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 
-                    &:hover {
-                        transform: scale(1.2);
-                        box-shadow: 0 0 15px 5px rgba(12, 186, 255, 0.7);
-                    }
+            &:hover {
+            transform: scale(1);
+            box-shadow: 0 0 15px 5px rgba(12, 186, 255, 0.7);
+        }   
 
-            & span {
-                margin-right: .5rem;
-                font-weight: bold;
-                font-size: 1.5rem;
-                text-transform: lowercase;
-                color: #00a1d2;
-
-                }
-            }
+        & span {
+            text-transform: lowercase;
+            font-weight: 800;
+            color: #2dceffdd;
         }
     }
+    }
+}
+
+@media (width >= 80em) {
+  .background-cults {
+    background-image: url(../assets/img/background-desktop-cults.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 12rem;
+  }
+
+  #cults {
+    background-image: none;
+
+    & .flex {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+    }
+
+    & img {
+      width: 5rem;
+      transform: rotate(-15deg) translateY(6rem);
+      margin-left: 32rem;
+    }
+
+    & h1 {
+      font-family: 'poppins', sans-serif;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 5rem;
+      margin-left: 3rem;
+      text-align: center;
+      color: #ffffffce;
+    }
+
+    & h2 {
+      font-family: 'dancing script', sans-serif;
+      font-size: 4.5rem;
+      font-weight: 600;
+      margin-left: 1rem;
+      text-align: center;
+      margin-top: -3rem;
+      color: #2dceffdd;
+    }
+
+    & .list {
+      & span {
+        font-family: 'poppins', sans-serif;
+        margin-top: 4rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #ffffffce;
+      }
+
+      & .clickable {
+        margin-top: -0.7rem;
+        width: 24rem;
+        text-align: center;
+        border: 2px solid #00a1d24d;
+        border-radius: 3rem;
+        padding: 0.3rem;
+        font-family: 'poppins', sans-serif;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: #ffffffce;
+        cursor: pointer;
+        display: inline-block;
+
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: scale(1.2);
+          box-shadow: 0 0 15px 5px rgba(12, 186, 255, 0.7);
+        }
+
+        & span {
+          margin-right: 0.5rem;
+          font-weight: bold;
+          font-size: 1.5rem;
+          text-transform: lowercase;
+          color: #00a1d2;
+        }
+      }
+    }
+  }
 }

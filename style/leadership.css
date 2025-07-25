@@ -38,22 +38,24 @@
             font-family: 'poppins', sans-serif;
             font-weight: 800;
             font-size: 3em;
-            text-align: justify;
+            text-align: center;
         }
 
         & p {
-            margin-top: 1rem;
+            margin-top: 3rem;
             margin-bottom: 3rem;
             font-family: 'roboto', sans-serif;
             font-weight: 400;
             font-size: 1.2rem;
-            text-align: center;
+            text-align: justify;
+            max-width: 90%;
+            margin-left: 2rem;
         }
 
         & img {
             display: block;
             margin: auto;
-            width: 35rem;
+            width: 40rem;
         }
     }
 }
@@ -61,34 +63,43 @@
 @media (width >= 80em) {
     #leadership {
         background-color: #FFFFFF;
-        padding-bottom: 15rem;
+        padding: 5rem 2rem;
+
+        & .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+
+        & .text-content {
+        flex: 1 1 50%;
+        }
 
         & h1 {
-            margin-top: 25rem;
-            font-family: 'poppins', sans-serif;
-            font-weight: 800;
-            font-size: 4em;
-            text-align: left;
-            top: 15rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 4em;
+        text-align: left;
+        margin-bottom: 2rem;
         }
 
         & p {
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-            font-family: 'roboto', sans-serif;
-            font-weight: 400;
-            font-size: 1.5rem;
-            max-width: 55rem;
-            text-align: start;
-            top: 35rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 1.6;
         }
 
         & img {
-            display: block;
-            width: 50rem;
-            margin-top: -40rem;
-            margin-right: -25rem;
-            transform: translateX(-50%);
+        flex: 1 1 40%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
         }
     }
 }
