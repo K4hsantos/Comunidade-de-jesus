@@ -4,6 +4,10 @@
     padding: 0; 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -45,6 +49,23 @@ body {
     font-weight: 600;
     margin-top: 3rem;
     margin-bottom: 1rem;
+}
+
+#qrContainer {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+#qrContainer.show {
+  max-height: 500px; /* valor maior que a altura do QR */
+  opacity: 1;
+}
+
+#qrContainer img {
+  margin-top: 5rem;
+  display: block; /* pra margem funcionar certinho */
 }
 
 @media (width >= 48em) { 

@@ -1,7 +1,7 @@
 #offering {
   background-image: url(../assets/img/background-offering.jpg);
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   width: 100%;
   padding-bottom: 10rem;
@@ -9,13 +9,12 @@
 
   & h1 {
     padding-top: 4rem;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     text-align: center;
     font-weight: 900;
     color: #34261F;
-    margin: 0 auto 2rem auto;
-    width: 90%;
+    margin-bottom: 2rem;
     max-width: 50rem;
   }
 
@@ -29,9 +28,33 @@
     margin: 0 auto;
     line-height: 1.6;
   }
+
+    & .btn {
+    display: inline-block;
+    margin: 2rem auto 0 auto;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ff710cab;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+
+  & .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
 }
 
+
 @media (width >= 48em) and (width <= 64em) {
+
   #offering {
     padding-bottom: 15rem;
 
@@ -47,11 +70,22 @@
 }
 
 @media (width >= 80em) {
+
+.desktop-only {
+  display: flex;
+  flex-direction: column; /* isso força empilhar verticalmente */
+  align-items: center; /* opcional, pra centralizar */
+  gap: 1rem; /* espaço entre botão e imagem */
+}
+
   #offering {
-    padding-bottom: 20rem;
+    background-size: 200%;
+    padding-bottom: 5rem;
 
     & h1 {
+      margin: auto;
       padding-top: 10rem;
+      margin-bottom: 2rem;
       font-size: 3.5rem;
     }
 
