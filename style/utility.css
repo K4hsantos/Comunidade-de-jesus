@@ -59,14 +59,15 @@ body {
 }
 
 #qrContainer.show {
-  max-height: 500px; /* valor maior que a altura do QR */
-  opacity: 1;
+    max-height: 500px;
+    opacity: 1;
 }
 
 #qrContainer img {
-  margin-top: 5rem;
-  display: block; /* pra margem funcionar certinho */
+    padding-top: 5rem;
+    display: block;
 }
+
 
 @media (width >= 48em) { 
 
