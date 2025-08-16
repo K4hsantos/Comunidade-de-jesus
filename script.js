@@ -26,3 +26,5 @@ qrBtn.addEventListener("click", (event) => {
   event.preventDefault();
   qrContainer.classList.toggle("show");
 });
+
+
