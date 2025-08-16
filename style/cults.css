@@ -166,45 +166,36 @@
   #cults {
     background-image: none;
 
-    /* ↑ container maior e centralizado */
     & .container {
-      max-width: 1360px;            /* pode subir p/ 1440px se quiser ainda mais folga */
+      max-width: 1360px;           
       margin-inline: auto;
       padding-inline: 1.5rem;
       box-sizing: border-box;
       text-align: center;
     }
 
-    /* ─────────────────────────────────────────────
-       CABEÇALHO (ÍCONE + H1 LADO A LADO)
-       Se puder criar <div class="title"> envolvendo <img> e <h1>,
-       use o bloco A. Se não, use o bloco B (sem mexer no HTML).
-       ───────────────────────────────────────────── */
-
-    /* A) COM <div class="title"> (recomendado) */
     & .title {
       display: inline-flex;
       align-items: center;
       gap: 1rem;
       margin-top: 2rem;
     }
-    & .title img { width: 3.2rem; transform: rotate(-15deg); }
+
+    & .title img { width: 3.5rem; transform: rotate(-15deg); }
     & .title h1 { margin: 0; }
 
-    /* B) SEM mudar HTML: coloca <img> e <h1> na mesma linha */
     & > .container > img,
     & > .container > h1 {
       display: inline-block;
       vertical-align: middle;
     }
+
     & > .container > img {
       width: 3.2rem;
       transform: rotate(-15deg);
-      margin: 2rem .8rem 0 0;     /* espaçamento ao lado do H1 */
+      margin: 2rem .8rem 0 0;   
     }
-    & > .container > h1 {
-      margin: 2rem 0 0 0;
-    }
+
 
     & h1 {
       font-family: 'poppins', sans-serif;
@@ -216,52 +207,46 @@
 
     & h2 {
       font-family: 'dancing script', sans-serif;
-      font-size: 4.2rem;
+      font-size: 4.7rem;
       font-weight: 600;
       color: #2dceffdd;
-      margin: .5rem 0 3rem;
-      display: block;             /* força quebrar linha depois do h1 */
+      margin-top: -4.3rem;
+      margin-bottom: 5rem;
+      display: block;         
     }
 
-    /* ─────────────────────────────────────────────
-       DIAS 100% UNIFORMES (largura e altura iguais)
-       ───────────────────────────────────────────── */
 
-    /* Em desktop grande: 4 colunas iguais */
     & > .container > .flex {
-      display: grid;                               /* usa grid mantendo o nome .flex */
+      display: grid;        
       grid-template-columns: repeat(4, minmax(0,1fr));
       column-gap: 2.5rem;
       align-items: start;
       justify-items: center;
     }
 
-    /* Cada dia como “cartão” uniforme */
+    
     & .list {
       width: 100%;
       display: grid;
-      grid-template-rows: auto 1fr; /* título em cima, botão ocupa o resto */
+      grid-template-rows: auto 1fr; 
       align-items: start;
       justify-items: center;
       text-align: center;
       gap: 1rem;
     }
 
-    /* Altura visual do título padronizada */
+   
     & .list h3 {
       margin: 0;
       line-height: 1.15;
-      min-height: 3.2rem;         /* mantém todos na mesma linha base */
+      min-height: 3.2rem;       
       display: grid;
       place-items: center;
     }
 
-    /* Botão “pílula” igual para todos:
-       - largura responsiva ao cartão
-       - altura única suficiente até p/ 2 linhas */
     & .list .clickable {
-      width: min(26rem, 100%);    /* limita, mas acompanha a coluna */
-      min-height: 5.2rem;         /* todos os 4 ficam com a MESMA altura */
+      width: min(26rem, 100%); 
+      min-height: 5.2rem;       
       padding: .7rem 1.2rem;
       border: 2px solid #00a1d24d;
       border-radius: 3rem;
@@ -273,11 +258,10 @@
       text-transform: uppercase;
       font-family: 'poppins', sans-serif;
       font-weight: 600;
-      font-size: clamp(1.05rem, 0.9vw, 1.3rem); /* reduz levemente p/ caber sem estourar */
+      font-size: clamp(1.05rem, 0.9vw, 1.3rem); 
       color: #ffffffce;
       text-align: center;
 
-      /* permite 1 ou 2 linhas, mas altura fica igual p/ todos */
       white-space: normal;
       overflow-wrap: anywhere;
 
@@ -290,7 +274,6 @@
       box-shadow: 0 0 15px 5px rgba(12,186,255,.7);
     }
 
-    /* “20h/19h” dentro do botão */
     & .list .clickable > span {
       margin-right: .2rem;
       font-weight: 800;
