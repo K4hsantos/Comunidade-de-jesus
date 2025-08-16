@@ -1,6 +1,7 @@
 #app {
     text-align: center;
     font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
 
     & h1 {
         margin-top: 4rem;
@@ -26,9 +27,9 @@
 
         & img {
             position: absolute;
-            width: 33rem;
-            top: 4rem;
-            right: -5rem;
+            width: 38rem;
+            top: 3rem;
+            right: -6rem;
         }
     }
 
@@ -36,6 +37,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
+        gap: 2rem;
         margin-top: 5rem;
 
         & img {
