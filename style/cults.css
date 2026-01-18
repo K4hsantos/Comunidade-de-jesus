@@ -163,7 +163,7 @@
     padding-bottom: 12rem;
   }
 
-  #cults {
+  #cults-desktop {
     background-image: none;
 
     & .container {
@@ -215,6 +215,13 @@
       display: block;         
     }
 
+    & h3 {
+      font-family: 'poppins', sans-serif;
+      margin-top: 4rem;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #ffffffce;
+    }
 
     & > .container > .flex {
       display: grid;        
