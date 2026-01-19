@@ -1,16 +1,17 @@
-
- .background {
-    background-image: url('../assets/img/header.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-bottom: 15.2rem;
-
-    & header {
-        & nav {
-            & a {
-                margin-top: 3rem;
+@media (width <= 48em) {
+    .background {
+        background-image: url(../assets/img/sobrenatural-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-bottom: 5rem;
+        & header {
+            & nav {
+                & a {
+                    margin-top: 3rem;
+                    display: none;
+                }
             }
         }
     }
@@ -18,13 +19,25 @@
 
 
 
-@media (width >= 48em) and (width <= 64em) {
 
-    header {
-        & nav {
-            & a {
-                padding-top: 2rem;
-                margin: auto;
+@media (width >= 48em) and (width <= 64em) {
+    .background {
+        padding-bottom: 10rem;
+        & header {
+            & nav {
+                justify-content: space-between;
+                & a {
+                    & img:nth-child(1) {
+                    width: 10rem;
+                    margin-top: -2rem;
+                    display: none;
+                }
+                & img:nth-child(2) {
+                    width: 20rem;
+                    margin-top: -1.9rem;
+                    display: none;
+                }
+                }
             }
         }
     }
@@ -33,18 +46,24 @@
 @media (width >= 80em) {
 
      .background {
-        
+            background-image: url(../assets/img/sobrenatural.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            padding-bottom: 5rem;
         & header {
             & nav {
                 justify-content: space-between;
                 & a {
                     & img:nth-child(1) {
-                    width: 10rem;
-                    margin-top: -2rem;
-                }
-                & img:nth-child(2) {
-                    width: 20rem;
-                    margin-top: -1.9rem;
+                        display: none;
+                        width: 10rem;
+                        margin-top: -2rem;
+                    }
+                    & img:nth-child(2) {
+                        width: 20rem;
+                        margin-top: -1rem;
                 }
                 }
 
@@ -55,15 +74,16 @@
                     gap: 2rem;
 
                     & a {
+                        display: initial;
                         width: fit-content;
                         position: relative;
                         text-decoration: none;
-                        color: white;
+                        color: rgb(255, 255, 255);
                         font-family: 'poppins', sans-serif;
                         font-size: 1.25rem;
-                        font-weight: 400;
+                        font-weight: 600;
                         align-items: center;
-                        margin-top: 1.2rem;
+                        margin-top: -.7rem;
 
                         &:hover::after {
                             transform: scaleX(1);
